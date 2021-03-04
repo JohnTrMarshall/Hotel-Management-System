@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6188DFB-0415-4912-850B-7961AB562407}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hotel_Management_System</RootNamespace>
+    <AssemblyName>Hotel_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="check_in_out_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="check_in_out_page.Designer.cs">
+      <DependentUpon>check_in_out_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs" />
+    <Compile Include="Display_Logs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Display_Logs.Designer.cs">
+      <DependentUpon>Display_Logs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccountInfo.Designer.cs">
+      <DependentUpon>frmAccountInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateAccount.designer.cs">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerMenu.designer.cs">
+      <DependentUpon>frmCustomerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeMenu.designer.cs">
+      <DependentUpon>frmEmployeeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageCustomerAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageCustomerAccount.Designer.cs">
+      <DependentUpon>frmManageCustomerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageEmployeeAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageEmployeeAccount.Designer.cs">
+      <DependentUpon>frmManageEmployeeAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logging.cs" />
+    <Compile Include="Maintenance.cs" />
+    <Compile Include="MetricsClasses.cs" />
+    <Compile Include="Metrics_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metrics_Page.Designer.cs">
+      <DependentUpon>Metrics_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reservation_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservation_page.Designer.cs">
+      <DependentUpon>reservation_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="room_management_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="room_management_page.Designer.cs">
+      <DependentUpon>room_management_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThirdPartyFile.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="check_in_out_page.resx">
+      <DependentUpon>check_in_out_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display_Logs.resx">
+      <DependentUpon>Display_Logs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccountInfo.resx">
+      <DependentUpon>frmAccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateAccount.resx">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerMenu.resx">
+      <DependentUpon>frmCustomerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeMenu.resx">
+      <DependentUpon>frmEmployeeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageCustomerAccount.resx">
+      <DependentUpon>frmManageCustomerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageEmployeeAccount.resx">
+      <DependentUpon>frmManageEmployeeAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metrics_Page.resx">
+      <DependentUpon>Metrics_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="reservation_page.resx">
+      <DependentUpon>reservation_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="room_management_page.resx">
+      <DependentUpon>room_management_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
